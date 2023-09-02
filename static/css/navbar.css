@@ -1,0 +1,27 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d4f1f4;
+  justify-content: center;
+}
+
+img {
+  float: left;
+  width: 41px;
+  height: 41px;
+}
+
+li {
+  float: left;
+  border-width: 40px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li:hover {
+  background-color: #75e6da;
+}
