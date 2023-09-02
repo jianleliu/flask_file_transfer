@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}"/>
+
+<script src="{{url_for('static', filename='js/home.js')}}"></script>
+{% endblock %}
+
+{% block title %} Download Page {% endblock %}
+
+{% block body %} <div class='2' ID='table'>
+  <table>
+    <tr class='title'>
+      <th id='c'>File Name</th>
+      <th id='c'>File Type</th>
+      <th id='c'>Size</th>
+      <th id='c'>Date</th>
+      <th>User</th>
+    </tr>
+    <tr class='row'>
+      <td id='c'>
+        <a href='/download/{filename}.{extension}?ID={ID}' download> {filename} </a>
+      </td>
+      <td id='c'>{file extension}</td>
+      <td id='c'>{file size}</td>
+      <td id='c'>{date}</td>
+      <td id='cl'>{user}</td>
+    </tr>
+    <tr class='row'>
+      <td id='c'>
+        <a href='/download/{filename}.{extension}?ID={ID}' download> {filename} </a>
+      </td>
+      <td id='c'>{file extension}</td>
+      <td id='c'>{file size}</td>
+      <td id='c'>{date}</td>
+      <td id='cl'>{user}</td>
+    </tr>
+  </table>
+</div>
+<div ID="page_buttons">
+  <form ID="load_downloads" method="POST">
+    <input type="button" value="zzzz" />
+  </form>
+</div>
+<script src="{{url_for('static', filename='js/test.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/navbar.css')}}" />
+        <script rel="script" src="{{url_for('static', filename='plugins/jquery.js')}}"></script>
+        <title>{% block title %}{% endblock %}</title>
+        {% block head %}{% endblock %}
+    </header>
+    <body>
+        <nav>
+            <div>
+                <ul>
+                  <div ID='logo'>
+                    <a href="/">
+                      <img src="{{url_for('static', filename='img/logo.png')}}" alt="'logo" />
+                    </a>
+                  </div>
+                  <div>
+                    <li>login</li>
+                  </div>
+                  <div>
+                    <a href='/upload'>
+                      <li>upload</li>
+                    </a>
+                  </div>
+                  <div>
+                    <a href='/home'>
+                      <li>download</li>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+        </nav>
+        {% block body %}{% endblock %}
+    </body>
+    <footer>
+        <p> &copy; 2023 this is a footer zzzzzzzzzzzzzz</p>
+    </footer>
+</html>
