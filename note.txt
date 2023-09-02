@@ -1,0 +1,5 @@
+* to enter venv
+    cmd: Source {path to activate batch file}
+* to exit venv
+    cmd: deactivate
+

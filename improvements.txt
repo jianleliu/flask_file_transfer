@@ -1,0 +1,2 @@
+*find a way to change max_allowed_packet to the same as MAX_CONTENT_LENGTH
+    using python
